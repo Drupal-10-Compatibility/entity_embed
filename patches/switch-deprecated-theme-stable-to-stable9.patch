@@ -1,0 +1,31 @@
+diff --git a/tests/src/FunctionalJavascript/MediaImageTest.php b/tests/src/FunctionalJavascript/MediaImageTest.php
+index 4718edc..95e1a06 100644
+--- a/tests/src/FunctionalJavascript/MediaImageTest.php
++++ b/tests/src/FunctionalJavascript/MediaImageTest.php
+@@ -45,7 +45,7 @@ class MediaImageTest extends EntityEmbedTestBase {
+   /**
+    * {@inheritdoc}
+    */
+-  protected $defaultTheme = 'stable';
++  protected $defaultTheme = 'stable9';
+ 
+   /**
+    * {@inheritdoc}
+@@ -719,7 +719,7 @@ class MediaImageTest extends EntityEmbedTestBase {
+ 
+     // Configure a different default and admin theme, like on most Drupal sites.
+     $this->config('system.theme')
+-      ->set('default', 'stable')
++      ->set('default', 'stable9')
+       ->set('admin', 'stark')
+       ->save();
+ 
+@@ -734,7 +734,7 @@ class MediaImageTest extends EntityEmbedTestBase {
+     $this->getSession()->switchToIFrame('ckeditor');
+     $this->assertSession()->waitForElementVisible('css', 'img[src*="image-test.png"]');
+     $element = $this->assertSession()->elementExists('css', '[data-entity-embed-test-active-theme]');
+-    $this->assertSame('stable', $element->getAttribute('data-entity-embed-test-active-theme'));
++    $this->assertSame('stable9', $element->getAttribute('data-entity-embed-test-active-theme'));
+ 
+     // Assert that the first preview request transferred data over the wire.
+     // Then toggle source mode on and off. This causes the CKEditor widget to be

@@ -1,4 +1,4 @@
-name: <project_name>
+name: entity-embed
 type: drupal9
 docroot: web
 php_version: "8.1"
@@ -15,7 +15,7 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: "2"
 web_environment:
-  - PROJECT_NAME=<project_machine_name>
+  - PROJECT_NAME=entity_embed
 
 # Key features of ddev's config.yaml:
 

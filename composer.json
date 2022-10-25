@@ -115,8 +115,8 @@
         },
         "patches": {
             "drupal/entity_embed": {
-                "Issue #3287235: Automated Drupal 10 compatibility fixes": "https://git.drupalcode.org/project/entity_embed/-/merge_requests/9.patch",
-                "Switch deprecated theme stable to stable9": "patches/switch-deprecated-theme-stable-to-stable9.patch"
+                "Issue #3317353: Replace deprecated Stable theme with Stable9 in automated tests": "https://git.drupalcode.org/project/entity_embed/-/merge_requests/17.patch",
+                "Issue #3287235: Automated Drupal 10 compatibility fixes":"https://git.drupalcode.org/project/entity_embed/-/merge_requests/9.patch"
             }
         }
     },
